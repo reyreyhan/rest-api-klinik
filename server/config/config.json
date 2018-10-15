@@ -16,10 +16,10 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "1",
-    "database": "belajar",
-    "host": "127.0.0.1",
+    "username": "qfelruywbwmvmw",
+    "password": "9f21c61a1e32e0f547dc5d539c5f3f4f5401f00e02b22b864ca23e4147862567",
+    "database": "d2qb9rp4unsei5",
+    "host": "ec2-107-22-189-136.compute-1.amazonaws.com",
     "port": 5432,
     "dialect": "postgres"
   }
