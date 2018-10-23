@@ -3,6 +3,7 @@ const todoItems = require('./todoitem')
 const user = require('./userController')
 const userProfile = require('./userProfileController')
 const berobat = require('./berobatController')
+const anamnese = require('./anamneseController')
 
 module.exports = {
     todo, 
@@ -10,4 +11,5 @@ module.exports = {
     user,
     userProfile,
     berobat,
+    anamnese
 }

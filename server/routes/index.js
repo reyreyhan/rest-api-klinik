@@ -3,6 +3,7 @@ const todoItemsController = require('../controllers').todoItems;
 const userController = require('../controllers').user;
 const userProfileController = require('../controllers').userProfile;
 const berobatController = require("../controllers").berobat;
+const anamneseController = require('../controllers').anamnese;
 
 module.exports = (app) => {
     app.get('/api', (req,res) => res.status(200).send({
@@ -23,9 +24,13 @@ module.exports = (app) => {
     app.post('/api/user/login', userController.login)
     app.get('/api/user/:id', userController.detail)
 
+    app.post("/api/user/search", berobatController.riwayat);
     app.post('/api/user/:id_user/profile', userProfileController.create)
 
     app.post('/api/user/:id_user/berobat', berobatController.create)
-    app.post('/api/user/search', berobatController.riwayat)
     app.get('/api/user/:id_user/riwayart', berobatController.riwayatDetail)
+
+    app.post('/api/user/:id_user/anamnese', anamneseController.create)
+    app.get('/api/user/:id_user/anamnese', anamneseController.anamneseDetail)
+    
 }
